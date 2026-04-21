@@ -23,8 +23,7 @@ Each module is self-contained with its own `ExampleRun.m` and `README.md`.
 ## Modules
 
 ### FiniteSampleExperiment
-Runs K-means and EM on a synthetic GMM whose centroids are scientist portrait
-images, sweeping SNR from −25 dB to +25 dB.  Records classification accuracy
+Runs K-means and EM on a synthetic GMM. Records classification accuracy
 and normalised centroid MSE over many Monte Carlo averages.
 
 → See [`FiniteSampleExperiment/README.md`](FiniteSampleExperiment/README.md)
