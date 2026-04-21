@@ -10,10 +10,10 @@ MATLAB code accompanying the paper:
 
 ```
 gmm-snr-misspecification/
-├── Shared/                     shared utilities (GetScientistImageData, Scientists/)
-├── FiniteSampleExperiment/     empirical K-means & EM finite-sample simulation
-├── PopulationEM_GHQuadrature/  population-level EM via GH quadrature
-└── GmmMockup/                  analytical & Monte Carlo centroid MSE demos
+├── Shared/                       shared utilities (GetScientistImageData, Scientists/)
+├── FiniteSampleExperiment/       empirical K-means & EM finite-sample simulation
+├── PopulationEM_GHQuadrature/    population-level EM via GH quadrature
+└── TheoreticalAndEmpiricalK2Gmm/ analytical & Monte Carlo centroid MSE demos
 ```
 
 Each module is self-contained with its own `ExampleRun.m` and `README.md`.
@@ -37,13 +37,13 @@ heat-maps.
 
 → See [`PopulationEM_GHQuadrature/README.md`](PopulationEM_GHQuadrature/README.md)
 
-### GmmMockup
+### TheoreticalAndEmpiricalK2Gmm
 Closed-form and Monte Carlo scripts that build intuition: shows how the
 hard-assignment centroid estimator under a symmetric 2-component GMM
 transitions from unbiased (MSE ∝ σ²) to saturated as σ grows, and
 visualises the centroid trajectory projected onto the separation axis.
 
-→ See [`GmmMockup/README.md`](GmmMockup/README.md)
+→ See [`TheoreticalAndEmpiricalK2Gmm/README.md`](TheoreticalAndEmpiricalK2Gmm/README.md)
 
 ---
 
@@ -62,8 +62,8 @@ run ExampleRun
 cd PopulationEM_GHQuadrature
 run ExampleRun
 
-% --- analytical & Monte Carlo mockups ---
-cd GmmMockup
+% --- analytical & Monte Carlo ---
+cd TheoreticalAndEmpiricalK2Gmm
 run ExampleRun
 ```
 
